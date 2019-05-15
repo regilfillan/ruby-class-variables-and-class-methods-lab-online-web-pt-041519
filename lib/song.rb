@@ -27,6 +27,6 @@ def artists
 end 
 
 def genre_count
-  hash.key
+  hash.keys[@@genres]= 
 
 end
