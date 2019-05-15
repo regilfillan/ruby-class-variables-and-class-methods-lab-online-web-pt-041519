@@ -3,7 +3,6 @@ attr_accessor :name, :artist, :genre
 @@count=0
 @@genres= []
 @@artists= []
-hash={}
 
 def initialize(name, artist, genre)
   @name= name
@@ -14,19 +13,28 @@ def initialize(name, artist, genre)
   @@artists << artist
 end
 
-def count
+def self.count
   @@count
 end
 
-def genres
+def self.genres
   @@genres.unique
 end 
 
-def artists
+def self.artists
   @@artists.unique
 end 
 
-def genre_count
-  hash.keys[@@genres]= 
+  def self.genre_count
+    genre_count = {}
+    @@genres.each do |genre|
+      if genre_count[genre]
+        genre_count[genre] += 1 
+      else
+        genre_count[genre] = 1
+      end
+    end
+    genre_count
+  end 
 
 end
