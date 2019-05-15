@@ -27,6 +27,6 @@ def artists
 end 
 
 def genre_count
-  @@genres.h_keys
+  hash.key
 
 end
