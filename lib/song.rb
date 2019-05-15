@@ -3,6 +3,7 @@ attr_accessor :name, :artist, :genre
 @@count=0
 @@genres= []
 @@artists= []
+hash={}
 
 def initialize(name, artist, genre)
   @name= name
@@ -24,5 +25,8 @@ end
 def artists
   @@artists
 end 
+
+def genre_count
+  @@genres.h_keys
 
 end
