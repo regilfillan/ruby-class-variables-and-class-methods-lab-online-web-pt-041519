@@ -19,7 +19,7 @@ def count
 end
 
 def genres
-  @@genres
+  @@genres.unique
 end 
 
 def artists
