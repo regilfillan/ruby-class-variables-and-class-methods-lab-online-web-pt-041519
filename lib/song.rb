@@ -23,7 +23,7 @@ def genres
 end 
 
 def artists
-  @@artists
+  @@artists.unique
 end 
 
 def genre_count
