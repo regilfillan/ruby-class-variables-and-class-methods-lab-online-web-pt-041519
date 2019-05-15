@@ -37,13 +37,13 @@ end
     genre_count
   end 
   
-def self.artists_count
+def self.artist_count
   artists_count={}
   @@artists.each do |artist|
-    if artists_count[artist]
-      artists_count[artist] +=1 
+    if artist_count[artist]
+      artist_count[artist] +=1 
     else
-      artists_count =1 
+      artist_count =1 
     end
   end
   artists_count
